@@ -2,7 +2,11 @@
 
 This is an OpenCV project which aims to filter the red color in a given png file.
 
+
 ## Tutorial
+
+
+### Code
 
 Firstly we need to import the necessary packages. Importing numpy for numerical processing, argparse for parsing our command line arguments and cv2 for OpenCV operations.
 
@@ -37,5 +41,25 @@ mask = cv2.inRange(img, lower, upper)
 
 output = cv2.bitwise_and(img, img, mask=mask)
 ```
+
+Now we can show our output beside the original image.
+
+```python
+cv2.imshow("", np.hstack([img, output]))
+```
+
+
+### How to run it?
+
+We have to execute the following command line to run our program where redlight_detector.py is the python script and img.png is the image to be filtered by the program.
+
+```
+python redlight_detector.py --image img.png
+```
+
+
+
+
+
 
 
