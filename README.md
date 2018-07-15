@@ -58,7 +58,11 @@ python redlight_detector.py --image img.png
 ```
 
 
+Executing the command line above with an image -named img.png- containing a red light will produce an output like this:
 
+<p align="center">
+  <img width="519" height="222" src="https://image.ibb.co/izHNMo/Ekran_G_r_nt_s_2018_07_15_04_24_11.png">
+</p>
 
 
 
